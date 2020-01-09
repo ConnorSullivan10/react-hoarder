@@ -1,6 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import '../styles/index.scss';
+import {
+  BrowserRouter as Router, Route, Redirect, Switch,
+} from 'react-router-dom';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import './App.scss';
 
 function App() {
   return (
