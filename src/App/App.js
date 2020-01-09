@@ -6,6 +6,9 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import './App.scss';
 
+import firebaseConnection from '../helpers/data/connection';
+import Auth from '../components/pages/Auth/Auth';
+
 function App() {
   return (
     <div className="App">
