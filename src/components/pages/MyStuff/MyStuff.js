@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import SingleStuff from '../SingleStuff/SingleStuff';
+import Stuff from '../../shared/Stuff/Stuff';
 
 // import PropTypes from 'prop-types';
 import stuffData from '../../../helpers/data/stuffData';
@@ -26,9 +25,8 @@ class MyStuff extends React.Component {
     return (
       <div className="MyStuff">
         <h1>My Stuff</h1>
-        <div className="myStuff-btn-container d-flex flex-wrap">
-          <Link className="btn btn-primary" to={'/stuff/12345/edit'}>Edit</Link>
-          <Link className="btn btn-success" to={'/stuff/12345'}>Single</Link>
+        <div className="myStuff-container d-flex flex-wrap">
+          { this.state.items.map((item) => <Stuff key={item.id} item={item}/>) }
         </div>
       </div>
     );
