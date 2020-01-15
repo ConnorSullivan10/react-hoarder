@@ -1,21 +1,38 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Stuff from '../../shared/Stuff/Stuff';
+
 // import PropTypes from 'prop-types';
+import stuffData from '../../../helpers/data/stuffData';
 import './MyStuff.scss';
 
 class MyStuff extends React.Component {
-  // static propTypes = {
+  state = {
+    items: [],
+  }
 
-  // }
+  componentDidMount() {
+    this.getItems();
+  }
+
+  getItems = () => {
+    stuffData.getAllStuff()
+      .then((items) => this.setState({ items }))
+      .catch((err) => console.error('error from get items', err));
+  }
+
+  deleteItem = (stuffId) => {
+    stuffData.deleteItem(stuffId)
+      .then(() => this.getItems())
+      .catch((err) => console.error('error in delete item', err));
+  }
 
   render() {
     // const {} = this.props;
     return (
       <div className="MyStuff">
         <h1>My Stuff</h1>
-        <div className="myStuff-btn-container d-flex flex-wrap">
-          <Link className="btn btn-primary" to={'/stuff/12345/edit'}>Edit</Link>
-          <Link className="btn btn-success" to={'/stuff/12345'}>Single</Link>
+        <div className="myStuff-container d-flex flex-wrap">
+          { this.state.items.map((item) => <Stuff key={item.id} item={item} deleteItem={this.deleteItem}/>) }
         </div>
       </div>
     );
