@@ -10,14 +10,20 @@ class MyStuff extends React.Component {
     items: [],
   }
 
+  componentDidMount() {
+    this.getItems();
+  }
+
   getItems = () => {
     stuffData.getAllStuff()
       .then((items) => this.setState({ items }))
       .catch((err) => console.error('error from get items', err));
   }
 
-  componentDidMount() {
-    this.getItems();
+  deleteItem = (stuffId) => {
+    stuffData.deleteItem(stuffId)
+      .then(() => this.getItems())
+      .catch((err) => console.error('error in delete item', err));
   }
 
   render() {
@@ -26,7 +32,7 @@ class MyStuff extends React.Component {
       <div className="MyStuff">
         <h1>My Stuff</h1>
         <div className="myStuff-container d-flex flex-wrap">
-          { this.state.items.map((item) => <Stuff key={item.id} item={item}/>) }
+          { this.state.items.map((item) => <Stuff key={item.id} item={item} deleteItem={this.deleteItem}/>) }
         </div>
       </div>
     );

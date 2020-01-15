@@ -24,6 +24,8 @@ const getAllStuff = () => new Promise((resolve, reject) => {
 
 const getSingleItem = (stuffId) => axios.get(`${baseUrl}/items/${stuffId}.json`);
 
+const deleteItem = (stuffId) => axios.delete(`${baseUrl}/items/${stuffId}.json`);
+
 const saveItem = (itemInfo) => axios.post(`${baseUrl}/items.json`, itemInfo);
 
 const updateItem = (itemId, item) => axios.put(`${baseUrl}/items/${itemId}.json`, item);
@@ -31,6 +33,7 @@ const updateItem = (itemId, item) => axios.put(`${baseUrl}/items/${itemId}.json`
 export default {
   getAllStuff,
   getSingleItem,
+  deleteItem,
   saveItem,
   updateItem,
 };
