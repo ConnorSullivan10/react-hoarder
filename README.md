@@ -1,3 +1,31 @@
+# React Hoarder
+
+## Technologies Used
+1. HTML5, SCSS, JavaScript
+2. Bootstrap & SASS 0.5.0: All customized styling
+3. React: For bundling components and building the UI
+
+## Description
+As a hoarder, use this application keep track of all of your stuff. Upon logging in, you'll be able to view the information cards about your collection of items, and have full capabilities to view, create, delete, and edit items from your hoarders den.
+
+## Screenshots
+
+![React Hoarder Preview 1]()
+![React Hoarder Preview 2]()
+![React Hoarder Preview 3]()
+![React Hoarder Preview 4]()
+![React Hoarder Preview 5]()
+![React Hoarder Preview 6]()
+
+## How to run
+1. Clone down this project.
+2. Go to: `https://www.npmjs.com/package/http-server` and install "http-server".  
+2. Navigate to the project folder in command line interface and type: `http-server -p 8888`  
+3. This will show at: `http://localhost:8888` in your internet browser.  
+
+Or you can launch your web browser and navigate to the following deployed link of the project:
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

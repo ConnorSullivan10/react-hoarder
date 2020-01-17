@@ -20,9 +20,9 @@ class SingleStuff extends React.Component {
     const { stuff } = this.state;
     return (
       <div className="SingleStuff" id={stuff.id}>
-        <h1>{stuff.itemName}</h1>
-        <img src={stuff.itemImage} className="image" alt=""/>
-        <p className="card-title">{stuff.itemDescription}</p>
+        <p className="singleHeader">{stuff.itemName}</p>
+        <img src={stuff.itemImage} className="image singleImg" alt=""/>
+        <p className="card-title formHeader singleDesc">{stuff.itemDescription}</p>
       </div>
     );
   }

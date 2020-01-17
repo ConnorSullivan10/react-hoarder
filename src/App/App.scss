@@ -1,8 +1,17 @@
 @import '../styles/variables';
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 
 
 .App {
   text-align: center;
-  background-color: pink;
+  background-color: $hoardRed;
+  height: 100%;
+  padding-top: 86px;
+}
+
+.nav-brand, .nav-link {
+  font-family: 'Anton', sans-serif;
+  color: $hoardRed !important;
+  font-size: 1.5em;
 }
