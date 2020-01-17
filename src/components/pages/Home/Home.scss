@@ -1,4 +1,21 @@
 .Home {
-  display: block;
-  object-fit: cover;
+  padding: 0;
+  background-color: rgb(151, 6, 1);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding-top: 1100px;
+      z-index: 1;
+      background-image: url('https://images-na.ssl-images-amazon.com/images/I/81F+DLinhOL._UR1600,1200_RI_.jpg');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      background-size: cover;
+}
+
+.background {
+  min-width: 1962px;
 }

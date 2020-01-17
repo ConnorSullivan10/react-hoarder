@@ -12,10 +12,10 @@
 }
 
 .card, .btn {
-  -moz-box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 1px 1px 3px rgba(0, 0, 0, 0.25);
-  -ms-box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 1px 1px 3px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 1px 1px 3px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 1px 1px 3px rgba(0, 0, 0, .25);
+  -moz-box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 2px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .card-img-top {
@@ -23,7 +23,10 @@
 }
 
 .card:hover {
-  box-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 4px 4px 8px rgba(0, 0, 0, .7);
+  -ms-box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 4px 4px 8px rgba(0, 0, 0, .7);
+  -webkit-box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 4px 4px 8px rgba(0, 0, 0, .7);
+  box-shadow: inset 0 1px 0 rgba(256, 256, 256, 0.55), 4px 4px 8px rgba(0, 0, 0, .7);
 }
 
 .card-title {
