@@ -23,12 +23,12 @@ class Stuff extends React.Component {
     return (
       <div className="Stuff col-3">
         <Link className="card" to={`/stuff/${item.id}`}>
-          <img src={item.itemImage} className="card-img-top" alt=""/>
           <div className="card-body">
+            <img src={item.itemImage} className="card-img-top" alt=""/>
             <h5 className="card-title">{item.itemName}</h5>
             <p className="card-title">{item.itemDescription}</p>
-            <button className="btn btn-danger" onClick={this.deleteItemEvent}>X</button>
-            <Link className="btn btn-warning" to={`/stuff/${item.id}/edit`}>Update</Link>
+            <Link className="btn btn-outline-success updateBtn" to={`/stuff/${item.id}/edit`}>Update</Link>
+            <button className="btn btn-outline-danger closeBtn" onClick={this.deleteItemEvent}>Delete</button>
           </div>
         </Link>
       </div>

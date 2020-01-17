@@ -30,7 +30,6 @@ class MyStuff extends React.Component {
     // const {} = this.props;
     return (
       <div className="MyStuff">
-        <h1>My Stuff</h1>
         <div className="myStuff-container d-flex flex-wrap">
           { this.state.items.map((item) => <Stuff key={item.id} item={item} deleteItem={this.deleteItem}/>) }
         </div>

@@ -44,39 +44,39 @@ class New extends React.Component {
     return (
       <form className="New">
         <div className="form-group">
-          <label htmlFor="stuff-name">New Item's Name</label>
+          <label className="formHeader" htmlFor="stuff-name">New Item's Name</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control form-control-lg"
             id="stuff-name"
-            placeholder="Enter name of new item"
+            placeholder="Enter name of item"
             value={newStuffName}
             onChange={this.nameChange}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="stuffImgUrl">Item Image URL</label>
+          <label className="formHeader" htmlFor="stuffImgUrl">Item's Image</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control form-control-lg"
             id="stuffImgUrl"
-            placeholder="Enter the new item's image URL"
+            placeholder="Enter Image URL"
             value={newStuffImage}
             onChange={this.imageChange}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="stuffDescription">Item Description</label>
+          <label className="formHeader" htmlFor="stuffDescription">Item Description</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control form-control-lg"
             id="stuffDescription"
-            placeholder="Enter a description about your new item"
+            placeholder="Describe the item"
             value={newStuffDescription}
             onChange={this.descriptionChange}
           />
         </div>
-        <button className="btn btn-secondary" onClick={this.saveNewItemEvent}>Save New Item</button>
+        <button className="btn btn-outline-success btn-lg" onClick={this.saveNewItemEvent}>Save New Item</button>
       </form>
     );
   }

@@ -56,36 +56,36 @@ class Edit extends React.Component {
     return (
       <form className="Edit">
         <div className="form-group">
-          <label htmlFor="stuff-name">Item's Name</label>
+          <label className="formHeader" hhtmlFor="stuff-name">Item's Name</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control form-control-lg"
             id="stuff-name"
             value={newStuffName}
             onChange={this.nameChange}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="stuffImgUrl">Image URL</label>
+          <label className="formHeader" htmlFor="stuffImgUrl">Image URL</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control form-control-lg"
             id="stuffImgUrl"
             value={newStuffImage}
             onChange={this.imageChange}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="stuffDescription">Description</label>
+          <label className="formHeader" htmlFor="stuffDescription">Description</label>
           <input
             type="text"
-            className="form-control"
+            className="form-control form-control-lg"
             id="stuffDescription"
             value={newStuffDescription}
             onChange={this.descriptionChange}
           />
         </div>
-        <button className="btn btn-secondary" onClick={this.updateItemEvent}>Update Item</button>
+        <button className="btn btn-lg btn-outline-success" onClick={this.updateItemEvent}>Update Item</button>
       </form>
     );
   }

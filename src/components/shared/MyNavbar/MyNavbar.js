@@ -30,7 +30,7 @@ class MyNavbar extends React.Component {
               <Link className="nav-link" to="/stuff/new">New</Link>
             </li>
             <li className="nav-item">
-              <button className="nav-link btn btn-danger" onClick={this.logMeOut}>Logout</button>
+              <button className="nav-link btn btn-outline-danger" onClick={this.logMeOut}>Logout</button>
             </li>
           </ul>
         );
@@ -39,7 +39,7 @@ class MyNavbar extends React.Component {
     };
     return (
       <div className="MyNavbar">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar shadow-sm fixed-top navbar-expand-lg navbar-light bg-light">
           <div className="nav-brand">React Hoarder</div>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
