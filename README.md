@@ -24,7 +24,7 @@ As a hoarder, use this application keep track of all of your stuff. Upon logging
 3. This will show at: `http://localhost:8888` in your internet browser.  
 
 Or you can launch your web browser and navigate to the following deployed link of the project:
-
+https://react-hoarder-1a901.firebaseapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
