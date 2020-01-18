@@ -53,8 +53,9 @@ class App extends React.Component {
           <Router>
             <MyNavbar authed={authed}/>
             <Switch>
+              <PrivateRoute path="/" exact component={Home} authed={authed}/>
+              <PublicRoute path="/auth" component={Auth} authed={authed}/>
               <PrivateRoute path="/home" exact component={Home} authed={authed}/>
-              <PublicRoute path="/auth" exact component={Auth} authed={authed}/>
               <PrivateRoute path="/stuff/:stuffId/edit" exact component={Edit} authed={authed}/>
               <PrivateRoute path="/stuff" exact component={MyStuff} authed={authed}/>
               <PrivateRoute path="/stuff/new" exact component={New} authed={authed}/>
